@@ -1,0 +1,27 @@
+*~
+bin
+obj
+*.user
+*.suo
+*.bak
+*.sln.cache
+_ReSharper*
+*/build
+*/test-results
+*.pidb
+*.usertasks
+*.userprefs
+*.orig
+*.tmp
+~*
+
+AssemblyVersion.cs
+AssemblyVersion.vb
+
+/.vs/
+/packages/
+/node_modules/
+
+/DB/Release Scripts/*.sql
+package-lock.json
+coverage.json
