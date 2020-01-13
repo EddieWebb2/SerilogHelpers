@@ -1,0 +1,13 @@
+﻿<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <appSettings xdt:Transform="InsertIfMissing">
+  </appSettings>
+  <appSettings>
+    <add key="LoggingEndpoint" value="http://localhost:9200"  xdt:Transform="Insert"/>
+    <add key="EnableElasticLogging" value="false"  xdt:Transform="Insert"/>
+    <add key="EnableConsoleLogging" value="true"  xdt:Transform="Insert"/>
+    <add key="SoftwareName" value="$AssemblyName$"  xdt:Transform="Insert"/>
+    <add key="ElasticLoggingLevel" value="Information"  xdt:Transform="Insert"/>
+    <add key="WriteToTempPath" value="false"  xdt:Transform="Insert"/>
+  </appSettings>
+</configuration>

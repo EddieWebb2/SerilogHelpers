@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>SerilogHelpers</id>
+    <version>$version$</version>
+    <title>Gattaca.Serilog.Standard</title>
+    <authors>Eddie Webb</authors>
+    <owners>Eddie Webb</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/EddieWebb2/SerilogHelpers</projectUrl>
+    <description>Core package for Kibana logging configuration</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Eddie Webb 2020</copyright>
+    <tags>Serilog, Kibana, Logging</tags>
+    <dependencies>
+      <dependency id="Serilog" version="2.9.0" />
+      <dependency id="Serilog.Sinks.Console" version="3.1.1" />
+      <dependency id="Serilog.Sinks.Elasticsearch" version="8.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="app.config.install.xdt" target="content" />
+    <file src="web.config.install.xdt" target="content" />
+    <file src="app.config.uninstall.xdt" target="content" />
+    <file src="web.config.uninstall.xdt" target="content" />
+  </files>
+</package>
