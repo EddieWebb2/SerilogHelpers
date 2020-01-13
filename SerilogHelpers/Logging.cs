@@ -23,7 +23,7 @@ namespace SerilogHelpers
 
             // Use local temp path for Desktop Applications
             if (config.WriteToTempPath)
-                logPath = Path.Combine(Path.GetTempPath(), "gatlogs");
+                logPath = Path.Combine(Path.GetTempPath(), "project_logs");
 
             var logConfig = new LoggerConfiguration()
                 .MinimumLevel.Debug()
@@ -33,7 +33,7 @@ namespace SerilogHelpers
             if (enrichers != null)
                 logConfig.Enrich.With(enrichers);
 
-            logConfig.WriteTo.RollingFile(Path.Combine(logPath, $"{config.SoftwareName}.log"),
+            logConfig.WriteTo.File(Path.Combine(logPath, $"{config.SoftwareName}.log"),
                                     outputTemplate: DefaultOutputTemplate);
 
             if (config.EnableConsoleLogging)
