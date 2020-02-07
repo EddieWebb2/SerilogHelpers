@@ -6,6 +6,4 @@
 
 ### Current State:
 - Serilog for service logging has been setup.
-
-### Future State:
-- Internal Add integration and unit tests to prove functionality
+- Base tests have been added to prove enrichers.
