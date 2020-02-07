@@ -1,5 +1,8 @@
 # Release Notes
 
+## 1.0.2
+- Udated tests for helper groups.
+
 ## 1.0.1
 - Added enricher tests to support Serilog Helper functionality.
 

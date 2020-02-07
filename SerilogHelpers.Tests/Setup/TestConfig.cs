@@ -19,7 +19,7 @@ namespace SerilogHelpers.Tests.Setup
             EnableElasticLogging = false;
             EnableConsoleLogging = false;
             SoftwareName = "KibanaTester";
-            ElasticLoggingLevel = LogEventLevel.Information;
+            ElasticLoggingLevel = LogEventLevel.Debug;
             WriteToTempPath = false;
         }
     }
